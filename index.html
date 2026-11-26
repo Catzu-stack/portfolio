@@ -33,7 +33,7 @@
     .project-group{margin-bottom:42px}.project-group:last-child{margin-bottom:0}.group-heading{display:flex;align-items:baseline;gap:15px;margin:0 0 15px}.group-heading h2{font:500 24px var(--display);letter-spacing:-.04em;margin:0}.group-count{font:10px var(--mono);color:var(--sub)}.project-group .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-group .project-card:only-child{max-width:620px}
     .projects-filter{margin-bottom:32px}.filter-btn{min-height:42px;font-size:11px}.preview-label{font:10px var(--mono);color:#a4b2c8;margin:0 0 10px}.project-art .art-caption{max-width:75%;line-height:1.5}.project-art img{width:100%;height:100%;object-fit:cover;display:block}.project-art.has-image:before{display:none}
     .project-art.website .web-frame{position:absolute;inset:45px 13% 17px;border:1px solid rgba(109,158,221,.35);border-radius:8px;background:#101b2a;overflow:hidden;box-shadow:0 0 30px rgba(29,106,172,.13)}.web-toolbar{height:19px;display:flex;align-items:center;gap:4px;padding:0 9px;border-bottom:1px solid #26384e}.web-toolbar i{height:4px;width:4px;border-radius:50%;background:#6383a8}.web-toolbar b{height:3px;width:30%;margin-left:12px;border-radius:4px;background:#344b65}.web-content{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:10px;height:calc(100% - 19px)}.web-content span{display:block;min-width:0;border-radius:4px;background:linear-gradient(145deg,#213950,#152236);border:1px solid #2e435a}.web-content .web-hero{grid-column:1/-1;background:linear-gradient(120deg,#1e4a71,#172536)}.web-content.photo{grid-template-columns:repeat(3,1fr)}.web-content.photo .web-hero{grid-column:span 2;grid-row:span 2}.web-content.shop{grid-template-columns:repeat(3,1fr)}.web-content.corporate{grid-template-columns:2fr 1fr}.web-content.corporate .web-hero{grid-column:1;grid-row:span 2}.web-content.restaurant .web-hero{background:linear-gradient(120deg,#24445b,#35414d)}
-    .modal .kicker{padding-right:40px}.modal ul{padding-left:20px;color:var(--sub);font-size:13px;line-height:1.8}.modal .tag{font-size:11px}.modal-note{color:#a0aec3!important}.modal-close{width:40px;height:40px}.modal{max-height:90dvh;overscroll-behavior:contain}.contact-form .form-status{font-size:12px}.contact-form .form-info{font-size:12px;color:var(--sub);margin:0 0 18px}.social-item:hover{color:#fff}.field input::placeholder,.field textarea::placeholder{color:#8996aa}.field label{color:#a5b3c9}
+    .modal .kicker{padding-right:40px}.modal ul{padding-left:20px;color:var(--sub);font-size:13px;line-height:1.8}.modal .tag{font-size:11px}.modal-note{color:#a0aec3!important}.modal-close{width:40px;height:40px}.modal{max-height:90dvh;overscroll-behavior:contain}.contact-form .form-status{font-size:12px}.contact-form .form-privacy{font-size:11px;color:var(--sub);line-height:1.65;margin:12px 0 0}.contact-form .form-privacy a{color:#8fb9f7;text-decoration:underline}.contact-form .form-info{font-size:12px;color:var(--sub);margin:0 0 18px}.social-item:hover{color:#fff}.field input::placeholder,.field textarea::placeholder{color:#8996aa}.field label{color:#a5b3c9}
     :focus-visible{outline:2px solid #85b8ff;outline-offset:4px}.skip-link{position:fixed;z-index:60;left:16px;top:8px;padding:10px 15px;background:#172942;border:1px solid #85b8ff;border-radius:8px;transform:translateY(-150%)}.skip-link:focus{transform:none}.mobile-nav:not(.open){visibility:hidden}.nav-links a{padding-block:10px}.lang{min-height:44px}.footer-inner{flex-wrap:wrap}.no-channels{font-size:12px;color:var(--sub)}
     .hero-art{min-width:0}
     @media(min-width:701px) and (max-width:1100px){.hero-art{height:min(470px,50vw);min-height:320px}.art-grid{width:82%;height:70%}}
@@ -180,7 +180,13 @@ const translations = {
     "message": "Message",
     "send": "Send message",
     "check": "Check message",
-    "formInfo": "This form is currently a preview. Messages are not transmitted until a contact channel is configured.",
+    "formInfo": "Your message will be sent to contact@msuzuki.fr after the anti-spam verification.",
+    "formPrivacy": "Your details are processed by FormSubmit to deliver your message. Google reCAPTCHA helps prevent spam. Please do not include sensitive information. FormSubmit retains submissions for 30 days.",
+    "formPrivacyLink": "FormSubmit documentation",
+    "formVerification": "Continue to the anti-spam verification to send your message.",
+    "formBot": "Unable to submit this message. Please reload the page and try again.",
+    "formLocal": "Open the website through a web server to send your message, or use the email link.",
+    "formReceived": "Thank you for your enquiry. If you do not receive a reply, you can also contact me directly by email.",
     "placeholderName": "Your name",
     "placeholderEmail": "you@example.com",
     "placeholderSubject": "Project or opportunity",
@@ -344,7 +350,13 @@ const translations = {
     "message": "Message",
     "send": "Envoyer le message",
     "check": "Vérifier le message",
-    "formInfo": "Ce formulaire est une prévisualisation. Aucun message ne sera transmis tant qu’un canal de contact ne sera pas configuré.",
+    "formInfo": "Votre message sera envoyé à contact@msuzuki.fr après la vérification anti-spam.",
+    "formPrivacy": "Vos coordonnées sont traitées par FormSubmit pour transmettre votre message. Google reCAPTCHA contribue à prévenir les envois indésirables. Ne communiquez pas de données sensibles. FormSubmit conserve les soumissions pendant 30 jours.",
+    "formPrivacyLink": "Documentation FormSubmit",
+    "formVerification": "Poursuivez la vérification anti-spam pour envoyer votre message.",
+    "formBot": "Impossible de transmettre ce message. Rechargez la page et réessayez.",
+    "formLocal": "Ouvrez le site via un serveur web pour envoyer votre message ou utilisez le lien e-mail.",
+    "formReceived": "Merci pour votre demande. Sans réponse de ma part, vous pouvez également me contacter directement par e-mail.",
     "placeholderName": "Votre nom",
     "placeholderEmail": "vous@exemple.fr",
     "placeholderSubject": "Projet ou opportunité",
@@ -640,7 +652,7 @@ const projectCatalog = [
 ];
 // Configure only verified destinations. Empty values do not render as links.
 const siteConfig = {
-  contactEndpoint: '', email: '',
+  contactEndpoint: 'https://formsubmit.co/contact@msuzuki.fr', email: 'contact@msuzuki.fr',
   socials: {github: 'https://github.com/Catzu-stack', linkedin: '', youtube: ''},
   projects: {planforge: {github:'', demo:'', screenshots:[]}, students: {github:'', demo:'', screenshots:[]}}
 };
@@ -704,10 +716,14 @@ function socialItem(label,key) {
   const url=safeURL(siteConfig.socials[key]);
   return url?`<a class="social-item" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer"><span>${label}</span><span aria-hidden="true">↗</span></a>`:'';
 }
+function contactReturnURL() {
+  if(!['https:','http:'].includes(location.protocol)) return '';
+  const url=new URL(location.href);url.search='';url.hash='/contact/sent';return url.href;
+}
 function contactView() {
   const t=tr(), email=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(siteConfig.email)?siteConfig.email:'', endpoint=safeURL(siteConfig.contactEndpoint);
   const socials=[socialItem(t.socialGithub,'github'),socialItem(t.socialLinkedin,'linkedin'),socialItem(t.socialYoutube,'youtube')].join('');
-  return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.contactKicker}</div><h1 class="page-title">${t.contactTitle}</h1><p>${t.contactIntro}</p></section><section class="content-section"><div class="contact-layout"><div class="contact-note"><h2>${t.contactLabel}</h2><p>${t.contactBody}</p><div class="social-list">${email?`<a class="social-item" href="mailto:${escapeHTML(email)}"><span>${escapeHTML(email)}</span><span aria-hidden="true">↗</span></a>`:`<p class="no-channels">${t.contactUnavailable}</p>`}${socials}</div></div><form class="contact-form" id="contact-form" novalidate>${endpoint?'':`<p class="form-info">${t.formInfo}</p>`}<div class="form-row"><div class="field"><label for="name">${t.name} *</label><input id="name" name="name" required autocomplete="name" placeholder="${t.placeholderName}"></div><div class="field"><label for="email">${t.email} *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="${t.placeholderEmail}"></div></div><div class="field"><label for="subject">${t.subject} *</label><input id="subject" name="subject" required placeholder="${t.placeholderSubject}"></div><div class="field"><label for="message">${t.message} *</label><textarea id="message" name="message" required placeholder="${t.placeholderMessage}"></textarea></div><div class="honeypot" aria-hidden="true" inert><input name="website" tabindex="-1" autocomplete="off"></div><button class="btn btn-primary" type="submit">${endpoint?t.send:t.check}<span class="arrow" aria-hidden="true">→</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></div></section></div>`;
+  return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.contactKicker}</div><h1 class="page-title">${t.contactTitle}</h1><p>${t.contactIntro}</p></section><section class="content-section"><div class="contact-layout"><div class="contact-note"><h2>${t.contactLabel}</h2><p>${t.contactBody}</p><div class="social-list">${email?`<a class="social-item" href="mailto:${escapeHTML(email)}"><span>${escapeHTML(email)}</span><span aria-hidden="true">↗</span></a>`:`<p class="no-channels">${t.contactUnavailable}</p>`}${socials}</div></div><form class="contact-form" id="contact-form" method="POST" action="${escapeHTML(endpoint)}" novalidate><p class="form-info">${endpoint?t.formInfo:t.formPending}</p><input type="hidden" name="_subject" value="M.SUZUKI — ${lang==='fr'?'Nouvelle demande de contact':'New contact enquiry'}"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_next" value="${escapeHTML(contactReturnURL())}"><div class="form-row"><div class="field"><label for="name">${t.name} *</label><input id="name" name="name" required maxlength="120" autocomplete="name" placeholder="${t.placeholderName}"></div><div class="field"><label for="email">${t.email} *</label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="${t.placeholderEmail}"></div></div><div class="field"><label for="subject">${t.subject} *</label><input id="subject" name="subject" required maxlength="200" placeholder="${t.placeholderSubject}"></div><div class="field"><label for="message">${t.message} *</label><textarea id="message" name="message" required maxlength="5000" placeholder="${t.placeholderMessage}"></textarea></div><div class="honeypot" aria-hidden="true" inert><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div><button class="btn btn-primary" type="submit">${endpoint?t.send:t.check}<span class="arrow" aria-hidden="true">→</span></button><p class="form-status${location.hash==='#/contact/sent'?' success':''}" id="form-status" role="status" aria-live="polite">${location.hash==='#/contact/sent'?t.formReceived:''}</p><p class="form-privacy">${t.formPrivacy} <a href="https://formsubmit.co/documentation" target="_blank" rel="noopener noreferrer">${t.formPrivacyLink}</a>.</p></form></div></section></div>`;
 }
 
 function aboutView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.aboutKicker}</div><h1 class="page-title">${t.aboutTitle}</h1><p>${t.aboutIntro}</p></section><section class="content-section"><div class="about-grid"><div class="about-copy"><h2 class="kicker">${t.aboutHeading}</h2><p>${t.aboutBody}</p><div class="timeline"><div class="timeline-head"><h3>${t.journey}</h3><span class="ongoing">${t.ongoing}</span></div><div class="timeline-row"><b>${t.school}</b><span>${t.schoolDesc}</span></div><div class="timeline-row"><b>${t.journeyStep}</b><span>${t.journeyDesc}</span></div></div></div><div><div class="kicker" style="margin:0 0 14px">${t.expertise}</div><div class="expertise-stack"><article class="expertise-card"><h3>${t.aiExpertise}</h3><ul>${t.aiList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.devExpertise}</h3><ul>${t.devList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.infraExpertise}</h3><ul>${t.infraList.map(x=>`<li>${x}</li>`).join('')}</ul></article></div></div></div></section></div>`}
@@ -722,7 +738,7 @@ function render({keepScroll=false,focusPage=false,draft=null}={}) {
   document.querySelector('meta[property="og:description"]').content=t.meta;
   document.querySelector('meta[property="og:title"]').content=`M.SUZUKI — ${t.heroLead} ${t.heroAccent}`;
   if(currentPage==='projects') bindFilters();
-  if(currentPage==='contact') {bindForm(); if(draft) for(const [k,v] of Object.entries(draft)) {if($('#contact-form').elements[k]) $('#contact-form').elements[k].value=v;}}
+  if(currentPage==='contact') {bindForm(); if(draft) for(const [k,v] of Object.entries(draft)) {if(['name','email','subject','message'].includes(k)&&$('#contact-form').elements[k]) $('#contact-form').elements[k].value=v;}}
   bindCards(); observeReveals();
   if(!keepScroll) window.scrollTo({top:0,behavior:'instant'});
   if(focusPage) app.focus({preventScroll:true});
@@ -759,17 +775,25 @@ function closeModal(restore=true) {
 }
 function bindForm() {
   const form=$('#contact-form'),status=$('#form-status'),button=form.querySelector('button[type="submit"]'),t=tr();
-  form.addEventListener('submit',async e=>{
-    e.preventDefault(); status.className='form-status'; const data=new FormData(form), email=String(data.get('email')||'').trim();
-    if(data.get('website'))return;
-    if(!form.checkValidity()||!['name','subject','message'].every(k=>String(data.get(k)||'').trim())||! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {status.textContent=t.formInvalid;status.classList.add('error');return;}
-    const endpoint=safeURL(siteConfig.contactEndpoint);
-    if(!endpoint){status.textContent=t.formPending;return;}
-    button.disabled=true;status.textContent=t.sending;
-    try {const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:data.get('name'),email,subject:data.get('subject'),message:data.get('message')})}); if(!response.ok)throw new Error('Submission failed');status.textContent=t.sent;status.classList.add('success');form.reset();}
-    catch{status.textContent=t.failed;status.classList.add('error');}finally{button.disabled=false;}
+  form.addEventListener('submit',e=>{
+    status.className='form-status';
+    const data=new FormData(form),email=String(data.get('email')||'').trim();
+    function reject(text){e.preventDefault();status.textContent=text;status.classList.add('error');}
+    if(data.get('_honey')){reject(t.formBot);return;}
+    if(!form.checkValidity()||!['name','subject','message'].every(k=>String(data.get(k)||'').trim())||! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {reject(t.formInvalid);form.reportValidity();return;}
+    if(!safeURL(siteConfig.contactEndpoint)){reject(t.formPending);return;}
+    if(!contactReturnURL()){reject(t.formLocal);return;}
+    form.elements.email.value=email;
+    status.textContent=t.formVerification;
+    // Native POST lets FormSubmit enforce its hosted CAPTCHA before delivery.
+    // Do not replace with AJAX or disable CAPTCHA.
+    button.disabled=true;
   });
 }
+window.addEventListener('pageshow',()=>{
+  const button=$('#contact-form button[type="submit"]');
+  if(button)button.disabled=false;
+});
 function observeReveals() {
   revealObserver?.disconnect(); const els=document.querySelectorAll('.reveal:not(.visible)');
   if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('visible'));return;}

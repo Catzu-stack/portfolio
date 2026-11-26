@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b12">
-  <meta name="description" content="M.SUZUKI — AI Prompt Engineer & Software Developer. Je transforme les idées complexes en solutions numériques intelligentes.">
-  <meta property="og:title" content="M.SUZUKI — AI & Software">
-  <meta property="og:description" content="Je transforme les idées complexes en solutions numériques intelligentes.">
+  <meta name="description" content="M.SUZUKI — AI Prompt Engineer & Software Developer. Portfolio de M. Suzuki : ingénierie de prompts IA, développement logiciel et conception de sites web.">
+  <meta property="og:title" content="M.SUZUKI — AI Prompt Engineer & Software Developer">
+  <meta property="og:description" content="Portfolio de M. Suzuki : ingénierie de prompts IA, développement logiciel et conception de sites web.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080b12'/%3E%3Ctext x='50%25' y='57%25' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='27' fill='%234d8dff'%3EMS%3C/text%3E%3C/svg%3E">
   <title>M.SUZUKI — AI Prompt Engineer & Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,49 +22,775 @@
     @media(max-width:700px){.wrap{width:min(100% - 36px,var(--max))}.topbar{top:9px;padding:0 12px}.nav{min-height:59px;padding:0 12px 0 16px;border-radius:12px}.nav-links{display:none}.menu-toggle{display:block;margin-left:auto}.nav .lang{margin-left:8px}.mobile-nav{display:flex;position:absolute;top:67px;left:12px;right:12px;padding:12px;border:1px solid rgba(129,151,187,.18);border-radius:12px;background:rgba(10,14,22,.96);backdrop-filter:blur(18px);flex-direction:column;gap:3px;opacity:0;pointer-events:none;transform:translateY(-7px);transition:.2s}.mobile-nav.open{opacity:1;pointer-events:auto;transform:none}.mobile-nav a{padding:11px 12px;color:#a8b1c0;border-radius:7px;font-size:13px}.mobile-nav a:hover,.mobile-nav a.active{background:rgba(77,141,255,.09);color:#fff}.page{padding-top:93px}.hero{min-height:auto;display:flex;flex-direction:column;align-items:stretch;padding:55px 0 27px;gap:4px}.hero h1{font-size:clamp(45px,12vw,66px);max-width:600px}.hero-desc{font-size:14px;margin:19px 0 23px}.status{margin-bottom:22px}.hero-art{height:300px;min-height:0;margin:8px -20px 0;transform:scale(.9)}.core{width:122px;height:122px;border-radius:29px}.core-mark{font-size:23px}.identity-strip{font-size:9px;padding:16px 0;gap:12px 23px}.section{padding:75px 0}.section-head{display:block;margin-bottom:27px}.section-head p{margin-top:15px}.projects-grid,.projects-grid.all-projects{grid-template-columns:1fr;gap:13px}.project-art{height:190px}.project-body{padding:18px}.project-body p{padding-right:10px}.project-card{border-radius:11px}.page-intro{padding:55px 0 40px}.page-intro .page-title{font-size:clamp(43px,11vw,62px)}.content-section{padding:15px 0 75px}.about-grid{grid-template-columns:1fr;gap:27px}.expertise-card ul{columns:1}.skills-grid{grid-template-columns:1fr}.skill-panel{padding:20px}.contact-layout{grid-template-columns:1fr;gap:27px}.contact-form{padding:18px}.form-row{grid-template-columns:1fr;gap:0}.footer-inner{align-items:flex-start;flex-direction:column}.modal{padding:23px 18px}.modal .project-art{height:155px}.art-label.l1{right:3%}.art-label.l2{left:5%}}
     @media(max-width:390px){.wrap{width:calc(100% - 28px)}.hero h1{font-size:44px}.actions .btn{padding:12px 13px}.hero-art{height:260px}.identity-strip span{font-size:8px}.project-top{align-items:flex-start;flex-direction:column;gap:8px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+    /* Refinements: retain the original orbit, typeface, gradients and animation keyframes. */
+    .core-mark{display:inline-block;line-height:1.3;padding-inline:.16em;white-space:nowrap;overflow:visible}
+    .hero h1{font-size:clamp(45px,5.45vw,70px)}
+    .hero-meta,.footer,.tag,.filter-btn,.art-label{color:#a0aec3}
+    .project-body p{font-size:13px}.project-top{flex-wrap:wrap;align-items:flex-start;gap:8px}.project-category{white-space:normal;line-height:1.5}
+    .project-card{display:flex;flex-direction:column}.project-body{display:flex;flex-direction:column;flex:1}.project-body .tags{margin-top:auto}.project-card[hidden],.project-group[hidden]{display:none!important}
+    .card-action{display:flex;align-items:center;gap:8px;align-self:flex-start;color:#a8caff;font-size:12px;margin-top:18px;padding:0;min-height:34px;background:none;border:0;cursor:pointer}.card-action:hover{color:#fff}.card-action .arrow{transition:transform .2s}.card-action:hover .arrow{transform:translateX(3px)}
+    .project-group{margin-bottom:42px}.project-group:last-child{margin-bottom:0}.group-heading{display:flex;align-items:baseline;gap:15px;margin:0 0 15px}.group-heading h2{font:500 24px var(--display);letter-spacing:-.04em;margin:0}.group-count{font:10px var(--mono);color:var(--sub)}.project-group .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-group .project-card:only-child{max-width:620px}
+    .projects-filter{margin-bottom:32px}.filter-btn{min-height:42px;font-size:11px}.preview-label{font:10px var(--mono);color:#a4b2c8;margin:0 0 10px}.project-art .art-caption{max-width:75%;line-height:1.5}.project-art img{width:100%;height:100%;object-fit:cover;display:block}.project-art.has-image:before{display:none}
+    .project-art.website .web-frame{position:absolute;inset:45px 13% 17px;border:1px solid rgba(109,158,221,.35);border-radius:8px;background:#101b2a;overflow:hidden;box-shadow:0 0 30px rgba(29,106,172,.13)}.web-toolbar{height:19px;display:flex;align-items:center;gap:4px;padding:0 9px;border-bottom:1px solid #26384e}.web-toolbar i{height:4px;width:4px;border-radius:50%;background:#6383a8}.web-toolbar b{height:3px;width:30%;margin-left:12px;border-radius:4px;background:#344b65}.web-content{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:10px;height:calc(100% - 19px)}.web-content span{display:block;min-width:0;border-radius:4px;background:linear-gradient(145deg,#213950,#152236);border:1px solid #2e435a}.web-content .web-hero{grid-column:1/-1;background:linear-gradient(120deg,#1e4a71,#172536)}.web-content.photo{grid-template-columns:repeat(3,1fr)}.web-content.photo .web-hero{grid-column:span 2;grid-row:span 2}.web-content.shop{grid-template-columns:repeat(3,1fr)}.web-content.corporate{grid-template-columns:2fr 1fr}.web-content.corporate .web-hero{grid-column:1;grid-row:span 2}.web-content.restaurant .web-hero{background:linear-gradient(120deg,#24445b,#35414d)}
+    .modal .kicker{padding-right:40px}.modal ul{padding-left:20px;color:var(--sub);font-size:13px;line-height:1.8}.modal .tag{font-size:11px}.modal-note{color:#a0aec3!important}.modal-close{width:40px;height:40px}.modal{max-height:90dvh;overscroll-behavior:contain}.contact-form .form-status{font-size:12px}.contact-form .form-info{font-size:12px;color:var(--sub);margin:0 0 18px}.social-item:hover{color:#fff}.field input::placeholder,.field textarea::placeholder{color:#8996aa}.field label{color:#a5b3c9}
+    :focus-visible{outline:2px solid #85b8ff;outline-offset:4px}.skip-link{position:fixed;z-index:60;left:16px;top:8px;padding:10px 15px;background:#172942;border:1px solid #85b8ff;border-radius:8px;transform:translateY(-150%)}.skip-link:focus{transform:none}.mobile-nav:not(.open){visibility:hidden}.nav-links a{padding-block:10px}.lang{min-height:44px}.footer-inner{flex-wrap:wrap}.no-channels{font-size:12px;color:var(--sub)}
+    .hero-art{min-width:0}
+    @media(min-width:701px) and (max-width:1100px){.hero-art{height:min(470px,50vw);min-height:320px}.art-grid{width:82%;height:70%}}
+    @media(min-width:1050px){.featured-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.featured-grid .project-top{flex-direction:column}.featured-grid .project-art{height:190px}}
+    @media(max-width:900px){.hero h1{font-size:clamp(43px,5.7vw,61px)}.group-heading h2{font-size:22px}}
+    @media(max-width:700px){.hero h1{font-size:clamp(42px,9.8vw,62px)}.project-group .projects-grid{grid-template-columns:1fr}.project-group .project-card:only-child{max-width:none}.project-group{margin-bottom:34px}.modal-backdrop{padding:12px}.modal .project-art .flow{inset:58px 8%}.modal .project-art .term{inset:39px 8% 12px;padding:8px 12px}.modal .project-art.website .web-frame{inset:39px 10% 10px}.card-action{min-height:44px}.project-art .art-caption{left:13px}.project-art .art-number{right:13px}.project-art .flow{inset:65px 8%}.hero-art{margin-inline:0}.hero-meta{line-height:1.6}.eyebrow{line-height:1.5}}
+    @media(max-width:390px){.hero h1{font-size:clamp(37px,10.5vw,43px)}.status{max-width:100%}.project-art .term{inset-inline:8%}.art-label{font-size:8px}.art-label.l3{right:3%}}
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#app" id="skip-link">Aller au contenu</a>
   <header class="topbar">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#/home" aria-label="M.SUZUKI home">M<span>.</span> SUZUKI</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="#/home" aria-label="M.SUZUKI — Accueil">M<span>.</span> SUZUKI</a>
       <div class="nav-links" id="desktop-nav"></div>
       <button class="lang" id="lang-toggle" aria-label="Switch language"></button>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><i></i></button>
       <div class="mobile-nav" id="mobile-nav"></div>
     </nav>
   </header>
-  <main id="app" class="page" tabindex="-1"></main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> M.SUZUKI · AI & Software</span><a href="#/contact" data-i18n="footerContact"></a><span data-i18n="footerLine"></span></div></footer>
-  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal" id="modal-content"></div></div>
+  <main id="app" class="page" tabindex="-1"><noscript>Ce portfolio nécessite JavaScript pour la navigation et le changement de langue. / This portfolio requires JavaScript for navigation and language selection.</noscript></main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> M.SUZUKI · <span data-i18n="footerRole"></span></span><a href="#/contact" data-i18n="footerContact"></a><span data-i18n="footerLine"></span></div></footer>
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal" id="modal-content"></div></div>
 <script>
-const translations={
- fr:{nav:['Accueil','À propos','Projets','Compétences','Contact'],status:'AI PROMPT ENGINEER · SOFTWARE DEVELOPER',heroTitle:'Je transforme les idées complexes en solutions numériques intelligentes.',heroDesc:'Je conçois des solutions numériques en combinant intelligence artificielle, développement logiciel et automatisation. De la conception d’un concept à la réalisation d’un produit fonctionnel, j’aime transformer les idées en expériences concrètes.',ctaProjects:'Explorer mes projets',ctaContact:'Me contacter',scroll:'CONÇU AVEC CURIOSITÉ · PROPULSÉ PAR LA TECHNOLOGIE',identity:['AI Prompt Engineering','Software Development','Digital Product Development','Automation & AI Workflows'],featuredKicker:'SÉLECTION · 01—06',featuredTitle:'Des idées, en mouvement.',featuredDesc:'Des concepts qui explorent l’intersection entre intelligence artificielle, logiciel et création numérique.',allProjects:'Tous les projets',seeAll:'Voir tous les projets',aboutTitle:'Curieux de technologie. Passionné par la création.',aboutIntro:'Mon parcours est guidé par une passion pour la technologie, la résolution de problèmes et la création de solutions utiles. Je m’intéresse particulièrement à la manière dont l’intelligence artificielle et le développement logiciel peuvent transformer des idées en produits concrets.',aboutHeading:'Une approche à la croisée des disciplines.',aboutBody:'Je combine conception de prompts, développement logiciel et culture produit pour donner une forme concrète aux idées. Je privilégie l’expérimentation, l’apprentissage continu et les outils qui rendent la technologie plus utile.',expertise:'Domaines d’exploration',aiExpertise:'Intelligence artificielle & prompt engineering',aiList:['Conception avancée de prompts','Design de prompts structurés','Instructions pour agents IA','Workflows de génération de documents professionnels','Création de contenu assistée par IA','Optimisation de workflows IA'],devExpertise:'Développement logiciel',devList:['Python · Django · C','JavaScript · React (fondamentaux)','HTML · CSS · API REST','Architecture de bases de données'],infraExpertise:'Infrastructure & technologies',infraList:['Linux · Fedora · Ubuntu','Git · GitHub · Nginx · Gunicorn','Cloudflare · OVH VPS','Fondamentaux réseau & cybersécurité'],journey:'Parcours d’apprentissage',ongoing:'EN COURS',school:'École 42 · apprentissage continu',schoolDesc:'Programmation en C, gestion mémoire, pointeurs, allocation dynamique, structures de données, fondamentaux du génie logiciel et résolution de problèmes en autonomie.',journeyStep:'Les fondamentaux avant les raccourcis',journeyDesc:'Apprendre à décomposer, tester et comprendre les systèmes — une étape à la fois.',skillsTitle:'Un ensemble d’outils, pas une liste de scores.',skillsIntro:'Des technologies et pratiques que j’explore pour concevoir, développer et faire évoluer des produits numériques.',skillsGroups:[['IA & AUTOMATISATION','AI','Prompt Engineering','AI Agent Design','Prompt Optimization','AI Workflow Design','AI Content Generation'],['PROGRAMMATION','</>','Python','C','JavaScript','HTML5','CSS3'],['FRAMEWORKS','{}','Django','Django REST Framework','React','Next.js','Tailwind CSS'],['INFRASTRUCTURE','⌘','Linux','Fedora','Ubuntu','Git','GitHub','Nginx','Gunicorn','Cloudflare','OVH VPS'],['CYBERSÉCURITÉ & RÉSEAUX','↔','Networking Fundamentals','Linux Security','Nmap','Scapy','Network Analysis']],projectTitle:'Projets & explorations',projectIntro:'Une collection de concepts et de projets qui reflètent mes intérêts : produits numériques, intelligence artificielle, développement et création.',filters:['Tout','IA & automatisation','Développement logiciel','SaaS & produits numériques','Projets créatifs'],contactTitle:'Un projet en tête ? Parlons-en.',contactIntro:'Je suis ouvert aux opportunités professionnelles, collaborations et projets innovants autour de l’intelligence artificielle et du développement logiciel.',contactLabel:'Écrivez-moi',contactBody:'Décrivez votre idée ou votre besoin. Les coordonnées et l’envoi du formulaire seront activés dès qu’un canal de contact sera configuré.',socialGithub:'GitHub',socialLinkedin:'LinkedIn',socialYoutube:'YouTube — Open Tab',name:'Nom',email:'Adresse e-mail',subject:'Sujet',message:'Message',send:'Envoyer le message',placeholderName:'Votre nom',placeholderEmail:'vous@exemple.com',placeholderSubject:'Comment puis-je vous aider ?',placeholderMessage:'Parlez-moi de votre projet…',formPending:'Le formulaire est prêt, mais aucun service d’envoi n’est encore configuré.',formInvalid:'Veuillez vérifier les champs obligatoires et votre adresse e-mail.',footerContact:'Prendre contact',footerLine:'Fait avec attention · FR / EN',detail:'À propos du projet',tech:'Technologies',statusLabel:'Statut',concept:'Concept / exploration',notLinked:'Non renseigné',close:'Fermer',notReal:'Aperçu graphique créé pour ce portfolio — il ne s’agit pas d’une capture d’écran du produit.',projectNames:['PanAfristream','BetIQ','AI Business Planning Agent','Plateforme de recrutement','Student Management System','Open Tab'],projectCategories:['SaaS / Streaming','Analyse sportive / Données','IA / Automatisation','Développement full-stack','Programmation C','Création de contenu'],projectDescriptions:['Un concept de plateforme de streaming pensé pour rendre le divertissement numérique plus accessible aux publics africains, tout en donnant plus de place aux créateurs.','Une plateforme d’intelligence sportive imaginée pour réunir données, comparaison de cotes et recommandations analytiques autour du football, du basketball et du tennis.','Un agent IA conçu pour transformer des idées d’entreprise en plans structurés, projections financières, présentations investisseurs et feuilles de route.','Un concept de plateforme de recrutement destiné à rapprocher candidats, employeurs et recruteurs dans une expérience numérique moderne.','Une application de gestion d’étudiants en ligne de commande pour explorer le C, les structures, pointeurs, allocation dynamique et opérations CRUD.','Un projet de création autour du jeu vidéo et du récit documentaire, notamment un défi de 100 jours dans Palworld.'],techs:[['Python','Django','React / Next.js','Cloudflare','Paystack','OVH VPS'],['Sports data','Analytics','Football','Basketball','Tennis'],['Prompt engineering','AI workflows','Document generation'],['Django','Python','Django REST Framework','React','Database'],['C','Structures','Pointers','Dynamic memory'],['Palworld','Gaming','Documentary storytelling']],projectStatuses:['Concept en exploration','Concept en exploration','Concept en exploration','Concept en exploration','Projet d’apprentissage','Projet créatif'],categories:['product','ai','ai','software','software','creative']},
- en:{nav:['Home','About','Projects','Skills','Contact'],status:'AI PROMPT ENGINEER · SOFTWARE DEVELOPER',heroTitle:'I transform complex ideas into intelligent digital solutions.',heroDesc:'I build digital solutions by combining artificial intelligence, software development and automation. From initial concepts to functional products, I enjoy turning ideas into practical experiences.',ctaProjects:'Explore my projects',ctaContact:'Get in touch',scroll:'BUILT WITH CURIOSITY · POWERED BY TECHNOLOGY',identity:['AI Prompt Engineering','Software Development','Digital Product Development','Automation & AI Workflows'],featuredKicker:'SELECTED WORK · 01—06',featuredTitle:'Ideas, in motion.',featuredDesc:'Concepts exploring the intersection of artificial intelligence, software and digital creativity.',allProjects:'All projects',seeAll:'View all projects',aboutTitle:'Curious about technology. Passionate about making.',aboutIntro:'My path is driven by a passion for technology, problem-solving and building useful solutions. I’m particularly interested in how artificial intelligence and software development can turn ideas into tangible products.',aboutHeading:'Working across disciplines.',aboutBody:'I combine prompt design, software development and product thinking to give ideas a practical form. I value experimentation, continuous learning and tools that make technology more useful.',expertise:'Areas of exploration',aiExpertise:'Artificial Intelligence & Prompt Engineering',aiList:['Advanced prompt engineering','Structured prompt design','AI agent instruction design','Business document generation workflows','AI-assisted content creation','AI workflow optimization'],devExpertise:'Software Development',devList:['Python · Django · C','JavaScript · React fundamentals','HTML · CSS · REST APIs','Database architecture'],infraExpertise:'Infrastructure & Technology',infraList:['Linux · Fedora · Ubuntu','Git · GitHub · Nginx · Gunicorn','Cloudflare · OVH VPS','Networking & cybersecurity fundamentals'],journey:'Learning journey',ongoing:'IN PROGRESS',school:'École 42 · ongoing learning',schoolDesc:'C programming, memory management, pointers, dynamic memory allocation, data structures, software engineering fundamentals and independent problem-solving.',journeyStep:'Fundamentals before shortcuts',journeyDesc:'Learning to break down, test and understand systems — one step at a time.',skillsTitle:'A toolkit, not a scorecard.',skillsIntro:'Technologies and practices I explore to design, build and evolve digital products.',skillsGroups:[['AI & AUTOMATION','AI','Prompt Engineering','AI Agent Design','Prompt Optimization','AI Workflow Design','AI Content Generation'],['PROGRAMMING','</>','Python','C','JavaScript','HTML5','CSS3'],['FRAMEWORKS','{}','Django','Django REST Framework','React','Next.js','Tailwind CSS'],['INFRASTRUCTURE','⌘','Linux','Fedora','Ubuntu','Git','GitHub','Nginx','Gunicorn','Cloudflare','OVH VPS'],['CYBERSECURITY & NETWORKING','↔','Networking Fundamentals','Linux Security','Nmap','Scapy','Network Analysis']],projectTitle:'Projects & explorations',projectIntro:'A collection of concepts and projects reflecting my interests: digital products, artificial intelligence, development and creative work.',filters:['All','AI & Automation','Software Development','SaaS & Digital Products','Creative Projects'],contactTitle:'Have a project in mind? Let’s talk.',contactIntro:'I’m open to professional opportunities, collaborations and innovative projects around artificial intelligence and software development.',contactLabel:'Get in touch',contactBody:'Tell me about your idea or needs. Contact details and form delivery will be enabled once a contact channel is configured.',socialGithub:'GitHub',socialLinkedin:'LinkedIn',socialYoutube:'YouTube — Open Tab',name:'Name',email:'Email address',subject:'Subject',message:'Message',send:'Send message',placeholderName:'Your name',placeholderEmail:'you@example.com',placeholderSubject:'How can I help?',placeholderMessage:'Tell me about your project…',formPending:'The form is ready, but no delivery service has been configured yet.',formInvalid:'Please check the required fields and your email address.',footerContact:'Get in touch',footerLine:'Made with care · FR / EN',detail:'About this project',tech:'Technologies',statusLabel:'Status',concept:'Concept / exploration',notLinked:'Not provided',close:'Close',notReal:'Custom visual preview created for this portfolio — this is not a product screenshot.',projectNames:['PanAfristream','BetIQ','AI Business Planning Agent','Recruitment Platform','Student Management System','Open Tab'],projectCategories:['SaaS / Streaming','Sports Analytics / Data','AI / Automation','Full-stack Development','C Programming','Content Creation'],projectDescriptions:['A streaming platform concept focused on making digital entertainment more accessible to African audiences while empowering content creators.','A sports intelligence platform concept bringing together sports data, odds comparison and analytical recommendations across football, basketball and tennis.','An AI-powered agent designed to turn business ideas into structured plans, financial projections, investor presentations and implementation roadmaps.','A recruitment platform concept designed to connect job seekers, employers and recruiters through a modern digital experience.','A command-line student management application exploring C, structures, pointers, dynamic memory allocation and CRUD operations.','A gaming content project exploring documentary-style storytelling through long-form gameplay challenges, including a 100-day journey in Palworld.'],techs:[['Python','Django','React / Next.js','Cloudflare','Paystack','OVH VPS'],['Sports data','Analytics','Football','Basketball','Tennis'],['Prompt engineering','AI workflows','Document generation'],['Django','Python','Django REST Framework','React','Database'],['C','Structures','Pointers','Dynamic memory'],['Palworld','Gaming','Documentary storytelling']],projectStatuses:['Concept in exploration','Concept in exploration','Concept in exploration','Concept in exploration','Learning project','Creative project'],categories:['product','ai','ai','software','software','creative']}
+const translations = {
+  "en": {
+    "nav": [
+      "Home",
+      "About",
+      "Projects",
+      "Skills",
+      "Contact"
+    ],
+    "status": "M. SUZUKI · AI & SOFTWARE",
+    "heroLead": "AI Prompt Engineer",
+    "heroAccent": "& Software Developer",
+    "heroDesc": "I design structured AI workflows, develop software and build websites. My focus is on making complex tasks easier to manage, from business planning to everyday digital operations.",
+    "ctaProjects": "Explore my projects",
+    "ctaContact": "Get in touch",
+    "scroll": "PROMPTS · CODE · PRACTICAL APPLICATIONS",
+    "identity": [
+      "Prompt engineering",
+      "Software development",
+      "Workflow automation",
+      "Website design"
+    ],
+    "artLabels": [
+      "INTELLIGENCE / 01",
+      "CONNECTED SYSTEMS",
+      "DESIGN & CODE"
+    ],
+    "artAlt": "Abstract illustration of interconnected technology",
+    "featuredKicker": "SELECTED WORK · 01—03",
+    "featuredTitle": "Projects in focus",
+    "featuredDesc": "Three areas of work: AI automation, software development and website design.",
+    "seeAll": "View all projects",
+    "aboutTitle": "How I work",
+    "aboutIntro": "I work at the intersection of artificial intelligence, software engineering and digital product development. I use AI to structure problems and accelerate repetitive work, and code to make the resulting solutions usable. I am also an SEO specialist, focusing on search engine visibility and the discoverability of websites.",
+    "aboutHeading": "From a problem to a working solution",
+    "aboutBody": "I start by identifying the task, the constraints and the expected output. I structure prompts and AI workflows, then use software development to implement and test the solution. I value clear interfaces, maintainable code and outputs that can be reviewed rather than simply accepted.",
+    "expertise": "Areas of practice",
+    "aiExpertise": "AI & Automation",
+    "aiList": [
+      "Prompt engineering",
+      "Structured LLM workflows",
+      "AI-assisted development",
+      "Workflow automation"
+    ],
+    "devExpertise": "Software Development",
+    "devList": [
+      "C, Python, JavaScript",
+      "HTML, CSS",
+      "Django, REST APIs",
+      "Web interfaces and data structures"
+    ],
+    "infraExpertise": "Tools & Infrastructure",
+    "infraList": [
+      "Git, GitHub",
+      "Linux, Fedora, Ubuntu",
+      "Nginx, OVH VPS",
+      "API integration"
+    ],
+    "journey": "Continuous learning",
+    "ongoing": "IN PROGRESS",
+    "school": "École 42 · C programming",
+    "schoolDesc": "Practising memory management, pointers, dynamic allocation, data structures and independent problem-solving.",
+    "journeyStep": "Experiment, test, refine",
+    "journeyDesc": "Building small projects to understand the underlying systems and improve the way I work with AI and code.",
+    "skillsTitle": "Technical toolkit",
+    "skillsIntro": "Languages, tools and approaches used or explored in my development work.",
+    "skillsGroups": [
+      [
+        "AI & Automation",
+        "AI",
+        "AI prompt engineering",
+        "LLM workflows",
+        "AI-assisted development",
+        "Workflow automation"
+      ],
+      [
+        "Software Development",
+        "</>",
+        "C",
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Django",
+        "Django REST Framework",
+        "React (fundamentals)"
+      ],
+      [
+        "Tools & Infrastructure",
+        "⌘",
+        "Git",
+        "GitHub",
+        "Linux",
+        "Fedora",
+        "Ubuntu",
+        "Nginx",
+        "OVH VPS",
+        "API integration"
+      ]
+    ],
+    "projectTitle": "Selected projects",
+    "projectIntro": "A focused collection of software, AI workflows and website design examples. Illustrations and planned examples are identified explicitly.",
+    "filters": [
+      "All projects",
+      "AI Automation",
+      "Software Development",
+      "Website Showcase"
+    ],
+    "contactTitle": "Let’s discuss your project.",
+    "contactIntro": "I’m open to professional opportunities and collaborations involving AI workflows, software development and website design.",
+    "contactLabel": "Contact & profiles",
+    "contactBody": "If you are working on a digital project or exploring how AI can simplify an existing process, I would be interested in discussing your requirements.",
+    "contactUnavailable": "Direct contact details have not been published yet.",
+    "socialGithub": "GitHub",
+    "socialLinkedin": "LinkedIn",
+    "socialYoutube": "YouTube",
+    "name": "Name",
+    "email": "Email address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "check": "Check message",
+    "formInfo": "This form is currently a preview. Messages are not transmitted until a contact channel is configured.",
+    "placeholderName": "Your name",
+    "placeholderEmail": "you@example.com",
+    "placeholderSubject": "Project or opportunity",
+    "placeholderMessage": "Describe your requirements…",
+    "formPending": "Your message is valid, but it has not been sent: no delivery service is configured.",
+    "formInvalid": "Please check the required fields and enter a valid email address.",
+    "footerContact": "Get in touch",
+    "footerLine": "Portfolio · EN / FR",
+    "footerRole": "AI & Software",
+    "detail": "Overview",
+    "purpose": "Purpose",
+    "features": "Scope & features",
+    "tech": "Technologies",
+    "statusLabel": "Project status",
+    "close": "Close project details",
+    "notReal": "Illustrative preview created for the portfolio, not a product screenshot.",
+    "plannedPreview": "Wireframe for a planned website example, not a completed client project.",
+    "viewDetails": "View details",
+    "screens": "Project screenshots",
+    "live": "Live preview",
+    "links": "Project links",
+    "noLinks": "No public project link has been provided.",
+    "noScreens": "No product screenshots have been supplied.",
+    "pending": "Planned example",
+    "filterLabel": "Filter projects",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "navLabel": "Main navigation",
+    "skip": "Skip to content",
+    "aboutKicker": "M.SUZUKI · ABOUT",
+    "projectsKicker": "PORTFOLIO · SELECTED WORK",
+    "skillsKicker": "TOOLS · METHODS · PRACTICE",
+    "contactKicker": "CONTACT · COLLABORATION",
+    "projectKicker": "PROJECT",
+    "sending": "Sending…",
+    "sent": "Message sent. Thank you.",
+    "failed": "Your message could not be sent. Please try again later.",
+    "preview": "Illustrative preview",
+    "planned": "Planned preview",
+    "screenshot": "Project screenshot",
+    "meta": "M. Suzuki — AI prompt engineering, software development, workflow automation and website design."
+  },
+  "fr": {
+    "nav": [
+      "Accueil",
+      "À propos",
+      "Projets",
+      "Compétences",
+      "Contact"
+    ],
+    "status": "M. SUZUKI · IA & LOGICIEL",
+    "heroLead": "Ingénieur en prompts IA",
+    "heroAccent": "& développeur logiciel",
+    "heroDesc": "Je conçois des workflows IA structurés, développe des logiciels et crée des sites web. Mon objectif : simplifier les tâches complexes, de la planification d’entreprise aux activités numériques du quotidien.",
+    "ctaProjects": "Découvrir mes projets",
+    "ctaContact": "Me contacter",
+    "scroll": "PROMPTS · CODE · APPLICATIONS CONCRÈTES",
+    "identity": [
+      "Ingénierie de prompts",
+      "Développement logiciel",
+      "Automatisation des workflows",
+      "Conception de sites web"
+    ],
+    "artLabels": [
+      "INTELLIGENCE / 01",
+      "SYSTÈMES CONNECTÉS",
+      "DESIGN & CODE"
+    ],
+    "artAlt": "Illustration abstraite de technologies interconnectées",
+    "featuredKicker": "PROJETS SÉLECTIONNÉS · 01—03",
+    "featuredTitle": "Mes projets à la une",
+    "featuredDesc": "Trois domaines : automatisation par l’IA, développement logiciel et conception de sites web.",
+    "seeAll": "Voir tous les projets",
+    "aboutTitle": "Ma façon de travailler",
+    "aboutIntro": "Je travaille à la croisée de l’intelligence artificielle, du développement logiciel et de la conception de produits numériques. J’utilise l’IA pour structurer les problèmes et accélérer les tâches répétitives, puis le code pour rendre les solutions utilisables. Je suis également spécialiste du référencement naturel (SEO), avec une attention particulière à la visibilité des sites web sur les moteurs de recherche.",
+    "aboutHeading": "Du problème à une solution concrète",
+    "aboutBody": "Je commence par identifier la tâche, les contraintes et le résultat attendu. Je structure les prompts et les workflows IA, puis je développe et teste la solution. Je privilégie les interfaces claires, le code maintenable et les résultats vérifiables.",
+    "expertise": "Domaines de pratique",
+    "aiExpertise": "IA & automatisation",
+    "aiList": [
+      "Ingénierie de prompts",
+      "Workflows LLM structurés",
+      "Développement assisté par IA",
+      "Automatisation des workflows"
+    ],
+    "devExpertise": "Développement logiciel",
+    "devList": [
+      "C, Python, JavaScript",
+      "HTML, CSS",
+      "Django, API REST",
+      "Interfaces web et structures de données"
+    ],
+    "infraExpertise": "Outils & infrastructure",
+    "infraList": [
+      "Git, GitHub",
+      "Linux, Fedora, Ubuntu",
+      "Nginx, OVH VPS",
+      "Intégration d’API"
+    ],
+    "journey": "Apprentissage continu",
+    "ongoing": "EN COURS",
+    "school": "École 42 · programmation en C",
+    "schoolDesc": "Pratique de la gestion mémoire, des pointeurs, de l’allocation dynamique, des structures de données et de la résolution de problèmes en autonomie.",
+    "journeyStep": "Expérimenter, tester, améliorer",
+    "journeyDesc": "Développer des projets pour comprendre le fonctionnement des systèmes et améliorer ma manière de travailler avec l’IA et le code.",
+    "skillsTitle": "Mes outils techniques",
+    "skillsIntro": "Langages, outils et méthodes utilisés ou explorés dans mes projets de développement.",
+    "skillsGroups": [
+      [
+        "IA & automatisation",
+        "IA",
+        "Ingénierie de prompts IA",
+        "Workflows LLM",
+        "Développement assisté par IA",
+        "Automatisation des workflows"
+      ],
+      [
+        "Développement logiciel",
+        "</>",
+        "C",
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Django",
+        "Django REST Framework",
+        "React (fondamentaux)"
+      ],
+      [
+        "Outils & infrastructure",
+        "⌘",
+        "Git",
+        "GitHub",
+        "Linux",
+        "Fedora",
+        "Ubuntu",
+        "Nginx",
+        "OVH VPS",
+        "Intégration d’API"
+      ]
+    ],
+    "projectTitle": "Projets sélectionnés",
+    "projectIntro": "Une sélection de logiciels, de workflows IA et d’exemples de conception web. Les illustrations et les exemples à venir sont clairement identifiés.",
+    "filters": [
+      "Tous les projets",
+      "Automatisation par l’IA",
+      "Développement logiciel",
+      "Vitrine de sites web"
+    ],
+    "contactTitle": "Échangeons sur votre projet.",
+    "contactIntro": "Je suis ouvert aux opportunités professionnelles et aux collaborations en automatisation par l’IA, développement logiciel et création de sites web.",
+    "contactLabel": "Contact & profils",
+    "contactBody": "Vous travaillez sur un projet numérique ou souhaitez simplifier un processus à l’aide de l’IA ? Je serais intéressé par un échange autour de vos besoins.",
+    "contactUnavailable": "Les coordonnées directes ne sont pas encore publiées.",
+    "socialGithub": "GitHub",
+    "socialLinkedin": "LinkedIn",
+    "socialYoutube": "YouTube",
+    "name": "Nom",
+    "email": "Adresse e-mail",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "check": "Vérifier le message",
+    "formInfo": "Ce formulaire est une prévisualisation. Aucun message ne sera transmis tant qu’un canal de contact ne sera pas configuré.",
+    "placeholderName": "Votre nom",
+    "placeholderEmail": "vous@exemple.fr",
+    "placeholderSubject": "Projet ou opportunité",
+    "placeholderMessage": "Décrivez votre besoin…",
+    "formPending": "Votre message est valide, mais il n’a pas été envoyé : aucun service d’envoi n’est configuré.",
+    "formInvalid": "Vérifiez les champs obligatoires et saisissez une adresse e-mail valide.",
+    "footerContact": "Me contacter",
+    "footerLine": "Portfolio · FR / EN",
+    "footerRole": "IA & logiciel",
+    "detail": "Présentation",
+    "purpose": "Objectif",
+    "features": "Périmètre & fonctionnalités",
+    "tech": "Technologies",
+    "statusLabel": "État du projet",
+    "close": "Fermer les détails du projet",
+    "notReal": "Illustration réalisée pour le portfolio, et non une capture réelle du produit.",
+    "plannedPreview": "Maquette indicative d’un site à venir, et non une réalisation client.",
+    "viewDetails": "Voir les détails",
+    "screens": "Captures du projet",
+    "live": "Aperçu en ligne",
+    "links": "Liens du projet",
+    "noLinks": "Aucun lien public du projet n’a été fourni.",
+    "noScreens": "Aucune capture réelle du produit n’a été fournie.",
+    "pending": "Exemple à venir",
+    "filterLabel": "Filtrer les projets",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "navLabel": "Navigation principale",
+    "skip": "Aller au contenu",
+    "aboutKicker": "M.SUZUKI · À PROPOS",
+    "projectsKicker": "PORTFOLIO · PROJETS SÉLECTIONNÉS",
+    "skillsKicker": "OUTILS · MÉTHODES · PRATIQUE",
+    "contactKicker": "CONTACT · COLLABORATION",
+    "projectKicker": "PROJET",
+    "sending": "Envoi en cours…",
+    "sent": "Message envoyé. Merci.",
+    "failed": "Le message n’a pas pu être envoyé. Réessayez plus tard.",
+    "preview": "Aperçu illustratif",
+    "planned": "Maquette indicative",
+    "screenshot": "Capture du projet",
+    "meta": "M. Suzuki — ingénierie de prompts IA, développement logiciel, automatisation et conception de sites web."
+  }
 };
-const siteConfig={contactEndpoint:'',socials:{github:'',linkedin:'',youtube:''}};
-let lang=localStorage.getItem('og-lang')==='en'?'en':'fr';let currentPage='home';let activeFilter='all';let lastFocus=null;
-const $=s=>document.querySelector(s);const app=$('#app');
-const projectsData=()=>{const t=translations[lang];return t.projectNames.map((name,i)=>({id:i,name,category:t.projectCategories[i],description:t.projectDescriptions[i],techs:t.techs[i],status:t.projectStatuses[i],type:t.categories[i],github:null,demo:null,screenshots:[]}))};
-const pageFromHash=()=>{const h=location.hash.replace(/^#\/?/,'').split('/')[0];return ['home','about','projects','skills','contact'].includes(h)?h:'home'};
-function updateNav(){const t=translations[lang],keys=['home','about','projects','skills','contact'];const links=keys.map((key,i)=>`<a href="#/${key}" class="${currentPage===key?'active':''}" ${currentPage===key?'aria-current="page"':''}>${t.nav[i]}</a>`).join('');$('#desktop-nav').innerHTML=links;$('#mobile-nav').innerHTML=links;$('#lang-toggle').innerHTML=lang==='fr'?'<strong>FR</strong><span>/</span>EN':'FR<span>/</span><strong>EN</strong>';$('#lang-toggle').setAttribute('aria-label',lang==='fr'?'Switch to English':'Passer en français');$('#menu-toggle').setAttribute('aria-expanded',$('#mobile-nav').classList.contains('open'));$('#mobile-nav').classList.toggle('open',false)}
-function artMarkup(i){const captions=['STREAMING / AFRICA','SPORTS INTELLIGENCE','AI WORKFLOW','TALENT NETWORK','C PROJECT / TERMINAL','DOCUMENTARY / GAMING'];let inside=['<div class="screen"><div class="stream-logo">PANAFRI<span style="color:#49cddd">STREAM</span></div><div class="stream-banner">Stories that move us.</div><div class="stream-row"><i></i><i></i><i></i><i></i></div></div>','<span class="chart-tag">LIVE · DATA VIEW</span><div class="chart"><div class="chart-bars"><i style="--h:38%"></i><i style="--h:53%"></i><i style="--h:47%"></i><i style="--h:69%"></i><i style="--h:60%"></i><i style="--h:82%"></i><i style="--h:73%"></i><i style="--h:92%"></i></div></div>','<div class="flow"><div class="flow-node">IDEA</div><div class="flow-line"></div><div class="flow-node">AI PLAN</div><div class="flow-line"></div><div class="flow-node">OUTPUT</div></div>','<div class="cards"><div class="recruit-card"><i></i><b></b><em></em></div><div class="recruit-card"><i></i><b></b><em></em></div><div class="recruit-card"><i></i><b></b><em></em></div><div class="recruit-card"><i></i><b></b><em></em></div></div>','<div class="term"><span class="green">$ ./students --list</span><br>id&nbsp;&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program<br><span class="blue">01&nbsp; Amina&nbsp;&nbsp;&nbsp; C / core</span><br>02&nbsp; Malik&nbsp;&nbsp;&nbsp; C / memory<br><span class="green">$ _</span></div>','<div class="game-scene"><div class="game-sun"></div></div>'];return `<div class="project-art ${['panafristream','betiq','agent','recruit','terminal','opentab'][i]}" aria-hidden="true"><span class="art-caption">${captions[i]}</span><span class="art-number">0${i+1} / MS</span>${inside[i]}</div>`}
-function projectCard(p){return `<article class="project-card reveal" tabindex="0" role="button" aria-label="${p.name}: ${lang==='fr'?'voir les détails':'view details'}" data-project="${p.id}" data-type="${p.type}">${artMarkup(p.id)}<div class="project-body"><div class="project-top"><h3>${p.name}</h3><span class="project-category">${p.category}</span></div><p>${p.description}</p><div class="tags">${p.techs.slice(0,4).map(x=>`<span class="tag">${x}</span>`).join('')}</div></div><span class="card-open" aria-hidden="true">↗</span></article>`}
-function homeView(){const t=translations[lang];return `<section class="wrap hero"><div class="hero-copy"><div class="status"><i class="status-dot"></i><span class="eyebrow">${t.status}</span></div><h1>${lang==='fr'?'Je transforme les idées complexes en solutions numériques <span class="accent">intelligentes.</span>':'I transform complex ideas into <span class="accent">intelligent digital solutions.</span>'}</h1><p class="hero-desc">${t.heroDesc}</p><div class="actions"><a class="btn btn-primary" href="#/projects">${t.ctaProjects}<span class="arrow">→</span></a><a class="btn" href="#/contact">${t.ctaContact}<span class="arrow">↗</span></a></div><div class="hero-meta">${t.scroll}</div></div><div class="hero-art" aria-label="Abstract interconnected technology visualization"><div class="art-glow"></div><div class="art-grid"></div><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="core"><span class="core-mark">MS</span></div><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i><i class="node n5"></i><span class="art-label l1">INTELLIGENCE / 01</span><span class="art-label l2">SYSTEMS CONNECTED</span><span class="art-label l3">IDEA → EXPERIENCE</span></div></section><div class="wrap identity-strip">${t.identity.map(x=>`<span>${x}</span>`).join('')}</div><section class="section wrap"><div class="section-head reveal"><div><div class="kicker">${t.featuredKicker}</div><h2>${t.featuredTitle}</h2></div><p>${t.featuredDesc}</p></div><div class="projects-grid">${projectsData().map(projectCard).join('')}</div><div style="text-align:center;margin-top:28px"><a href="#/projects" class="btn">${t.seeAll}<span class="arrow">→</span></a></div></section>`}
-function aboutView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">M.SUZUKI · ABOUT</div><h1 class="page-title">${t.aboutTitle}</h1><p>${t.aboutIntro}</p></section><section class="content-section"><div class="about-grid"><div class="about-copy"><h2 class="kicker">${t.aboutHeading}</h2><p>${t.aboutBody}</p><div class="timeline"><div class="timeline-head"><h3>${t.journey}</h3><span class="ongoing">${t.ongoing}</span></div><div class="timeline-row"><b>${t.school}</b><span>${t.schoolDesc}</span></div><div class="timeline-row"><b>${t.journeyStep}</b><span>${t.journeyDesc}</span></div></div></div><div><div class="kicker" style="margin:0 0 14px">${t.expertise}</div><div class="expertise-stack"><article class="expertise-card"><h3>${t.aiExpertise}</h3><ul>${t.aiList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.devExpertise}</h3><ul>${t.devList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.infraExpertise}</h3><ul>${t.infraList.map(x=>`<li>${x}</li>`).join('')}</ul></article></div></div></div></section></div>`}
-function projectsView(){const t=translations[lang];const filterClasses=['all','ai','software','product','creative'];return `<div class="wrap"><section class="page-intro"><div class="kicker">PORTFOLIO · 2026</div><h1 class="page-title">${t.projectTitle}</h1><p>${t.projectIntro}</p></section><section class="content-section"><div class="projects-filter" role="group" aria-label="${lang==='fr'?'Filtrer les projets':'Filter projects'}">${t.filters.map((f,i)=>`<button class="filter-btn ${activeFilter===filterClasses[i]?'active':''}" data-filter="${filterClasses[i]}">${f}</button>`).join('')}</div><div class="projects-grid all-projects">${projectsData().map(projectCard).join('')}</div></section></div>`}
-function skillsView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">TOOLS · METHODS · CURIOSITY</div><h1 class="page-title">${t.skillsTitle}</h1><p>${t.skillsIntro}</p></section><section class="content-section"><div class="skills-grid">${t.skillsGroups.map(([title,icon,...items])=>`<article class="skill-panel reveal"><h3><span class="skill-icon">${icon}</span>${title}</h3><div class="skill-list">${items.map(x=>`<span class="skill">${x}</span>`).join('')}</div></article>`).join('')}</div></section></div>`}
-function socialItem(label,key,t){const raw=siteConfig.socials[key];let url='';try{const parsed=new URL(raw);if(parsed.protocol==='https:')url=parsed.href}catch{}const content=`<span>${label}</span><span>${url?'↗':`URL ${t.notLinked}`}</span>`;return url?`<a class="social-item" href="${url}" target="_blank" rel="noopener noreferrer">${content}</a>`:`<div class="social-item">${content}</div>`}
-function contactView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">CONTACT · OPEN TO CONVERSATION</div><h1 class="page-title">${t.contactTitle}</h1><p>${t.contactIntro}</p></section><section class="content-section"><div class="contact-layout"><div class="contact-note"><h2>${t.contactLabel}</h2><p>${t.contactBody}</p><div class="social-list">${socialItem(t.socialGithub,'github',t)}${socialItem(t.socialLinkedin,'linkedin',t)}${socialItem(t.socialYoutube,'youtube',t)}</div></div><form class="contact-form" id="contact-form" novalidate><div class="form-row"><div class="field"><label for="name">${t.name} *</label><input id="name" name="name" required autocomplete="name" placeholder="${t.placeholderName}"></div><div class="field"><label for="email">${t.email} *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="${t.placeholderEmail}"></div></div><div class="field"><label for="subject">${t.subject} *</label><input id="subject" name="subject" required placeholder="${t.placeholderSubject}"></div><div class="field"><label for="message">${t.message} *</label><textarea id="message" name="message" required placeholder="${t.placeholderMessage}"></textarea></div><label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label><button class="btn btn-primary" type="submit">${t.send}<span class="arrow">→</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></div></section></div>`}
-function render(){currentPage=pageFromHash();document.documentElement.lang=lang;updateNav();const views={home:homeView,about:aboutView,projects:projectsView,skills:skillsView,contact:contactView};app.innerHTML=views[currentPage]();document.title=`${translations[lang].nav[['home','about','projects','skills','contact'].indexOf(currentPage)]} — M.SUZUKI | AI & Software`;if(currentPage==='projects')bindFilters();if(currentPage==='contact')bindForm();bindCards();observeReveals();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
-function bindFilters(){document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{activeFilter=btn.dataset.filter;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.project-card').forEach(card=>card.hidden=activeFilter!=='all'&&card.dataset.type!==activeFilter)}))}
-function bindCards(){document.querySelectorAll('.project-card').forEach(card=>{const open=()=>showProject(Number(card.dataset.project));card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})})}
-function projectLink(url,label,t){let safe='';try{const parsed=new URL(url);if(parsed.protocol==='https:')safe=parsed.href}catch{}return safe?`<a class="tag" href="${safe}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`:`<span class="tag">${label}: ${t.notLinked}</span>`}
-function showProject(id){const p=projectsData()[id],t=translations[lang];lastFocus=document.activeElement;$('#modal-content').innerHTML=`<button class="modal-close" aria-label="${t.close}">✕</button><div class="kicker">PROJECT 0${id+1} · M.SUZUKI</div>${artMarkup(id)}<h2 id="modal-title">${p.name}</h2><span class="detail-category">${p.category}</span><h3>${t.detail}</h3><p>${p.description}</p><h3>${t.tech}</h3><div class="tags">${p.techs.map(x=>`<span class="tag">${x}</span>`).join('')}</div><h3>${t.statusLabel}</h3><p>${p.status}</p><h3>GitHub · ${lang==='fr'?'Démo en ligne':'Live demo'}</h3><div class="tags">${projectLink(p.github,'GitHub',t)}${projectLink(p.demo,lang==='fr'?'Démo en ligne':'Live demo',t)}</div><h3>${lang==='fr'?'Captures d’écran':'Screenshots'}</h3><div class="detail-screens">${p.screenshots.length?p.screenshots.map(src=>`<img src="${src}" alt="${p.name} — ${lang==='fr'?'capture du projet':'project screenshot'}" loading="lazy" decoding="async">`).join(''):`<p>${t.notLinked}</p>`}</div><p class="modal-note">${t.notReal}</p>`;$('#project-modal').classList.add('open');document.body.style.overflow='hidden';$('.modal-close').focus();$('.modal-close').addEventListener('click',closeModal)}
-function closeModal(){const modal=$('#project-modal');modal.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus()}
-function bindForm(){const form=$('#contact-form'),status=$('#form-status'),button=form.querySelector('button[type="submit"]'),t=translations[lang];form.addEventListener('submit',async e=>{e.preventDefault();status.className='form-status';const data=new FormData(form),email=String(data.get('email')||''),emailParts=email.split('@');const valid=form.elements.name.value.trim()&&emailParts.length===2&&emailParts[0].length>0&&emailParts[1].includes('.')&&form.elements.subject.value.trim()&&form.elements.message.value.trim();if(data.get('website')){status.textContent='';return}if(!valid){status.textContent=t.formInvalid;status.classList.add('error');form.reportValidity();return}if(!siteConfig.contactEndpoint){status.textContent=t.formPending;status.classList.add('error');return}button.disabled=true;status.textContent=lang==='fr'?'Envoi en cours…':'Sending…';try{const response=await fetch(siteConfig.contactEndpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:data.get('name'),email,subject:data.get('subject'),message:data.get('message')})});if(!response.ok)throw new Error('Submission failed');status.textContent=lang==='fr'?'Message envoyé. Merci !':'Message sent. Thank you!';status.classList.add('success');form.reset()}catch(error){status.textContent=lang==='fr'?'Échec de l’envoi. Réessayez plus tard.':'Could not send your message. Please try again later.';status.classList.add('error')}finally{button.disabled=false}})}
-function observeReveals(){const els=document.querySelectorAll('.reveal');if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('visible'));return}const obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}}),{threshold:.12});els.forEach(e=>obs.observe(e))}
-$('#lang-toggle').addEventListener('click',()=>{lang=lang==='fr'?'en':'fr';localStorage.setItem('og-lang',lang);render()});$('#menu-toggle').addEventListener('click',()=>{$('#mobile-nav').classList.toggle('open');$('#menu-toggle').setAttribute('aria-expanded',$('#mobile-nav').classList.contains('open'))});$('#mobile-nav').addEventListener('click',e=>{if(e.target.closest('a'))$('#mobile-nav').classList.remove('open')});window.addEventListener('hashchange',render);$('#project-modal').addEventListener('click',e=>{if(e.target===$('#project-modal'))closeModal()});window.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#project-modal').classList.contains('open'))closeModal()});$('#year').textContent=new Date().getFullYear();render();
+const projectCatalog = [
+  {
+    "id": "planforge",
+    "type": "ai",
+    "art": "agent",
+    "en": {
+      "name": "PlanForge AI",
+      "category": "AI business planning",
+      "description": "AI-assisted business planning with structured plans, financial forecasts and document exports.",
+      "overview": "PlanForge AI helps users develop a business idea into a structured business plan, supported by guided inputs and AI-generated suggestions. It brings planning, financial assumptions and report generation into one application.",
+      "purpose": "Reduce the manual effort of structuring business plans and make financial assumptions easier to review.",
+      "features": [
+        "Guided business plan generation and AI planning assistance",
+        "Financial projections and three financial scenarios",
+        "Business planning reports and document exports, including PDF"
+      ],
+      "techs": [
+        "Google Gemini",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Prompt engineering"
+      ],
+      "status": "Application"
+    },
+    "fr": {
+      "name": "PlanForge AI",
+      "category": "Planification d’entreprise par l’IA",
+      "description": "Planification d’entreprise assistée par IA, avec plans structurés, projections financières et exports de documents.",
+      "overview": "PlanForge AI accompagne l’utilisateur dans la transformation d’une idée en plan d’affaires structuré, à partir de réponses guidées et de suggestions générées par IA. L’application réunit la planification, les hypothèses financières et la génération de rapports.",
+      "purpose": "Réduire le travail manuel de structuration des plans d’affaires et faciliter la revue des hypothèses financières.",
+      "features": [
+        "Génération guidée de plans d’affaires et assistance IA",
+        "Projections financières et trois scénarios financiers",
+        "Rapports de planification et exports de documents, dont le PDF"
+      ],
+      "techs": [
+        "Google Gemini",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Ingénierie de prompts"
+      ],
+      "status": "Application"
+    }
+  },
+  {
+    "id": "students",
+    "type": "software",
+    "art": "terminal",
+    "en": {
+      "name": "Student Management System",
+      "category": "C programming",
+      "description": "A command-line learning project for managing student records in C.",
+      "overview": "A command-line student management project exploring the organisation and manipulation of student records. It focuses on applying core C programming concepts to a small record-management system.",
+      "purpose": "Practise data modelling, memory management and basic record operations in C.",
+      "features": [
+        "Student records represented with structures",
+        "Create, read, update and delete operations",
+        "Pointers and dynamic memory allocation"
+      ],
+      "techs": [
+        "C",
+        "Structures",
+        "Pointers",
+        "Dynamic memory"
+      ],
+      "status": "Learning project"
+    },
+    "fr": {
+      "name": "Student Management System",
+      "category": "Programmation en C",
+      "description": "Un projet d’apprentissage en ligne de commande pour gérer des dossiers étudiants en C.",
+      "overview": "Un projet de gestion étudiante en ligne de commande consacré à l’organisation et à la manipulation de dossiers étudiants. Il permet d’appliquer les fondamentaux du langage C à un petit système de gestion de données.",
+      "purpose": "Mettre en pratique la modélisation des données, la gestion mémoire et les opérations de base sur des enregistrements en C.",
+      "features": [
+        "Dossiers étudiants représentés par des structures",
+        "Création, consultation, modification et suppression",
+        "Pointeurs et allocation dynamique de mémoire"
+      ],
+      "techs": [
+        "C",
+        "Structures",
+        "Pointeurs",
+        "Mémoire dynamique"
+      ],
+      "status": "Projet d’apprentissage"
+    }
+  },
+  {
+    "id": "restaurant",
+    "type": "website",
+    "art": "website",
+    "variant": "restaurant",
+    "en": {
+      "name": "Restaurant website",
+      "category": "Restaurant",
+      "description": "A planned restaurant site with an interactive menu and clear business information.",
+      "overview": "This is a planned design example, not a completed client website. The wireframe indicates a possible visual direction.",
+      "purpose": "Explore a responsive, business-focused website layout for this sector.",
+      "features": [
+        "Menu browsing and restaurant information",
+        "Responsive layout (planned)"
+      ],
+      "techs": [],
+      "status": "Planned example · technologies not selected"
+    },
+    "fr": {
+      "name": "Site de restaurant",
+      "category": "Restauration",
+      "description": "Un exemple de site de restaurant avec menu interactif et informations pratiques.",
+      "overview": "Il s’agit d’un exemple de conception à venir, et non d’un site client réalisé. La maquette présente une piste de mise en page.",
+      "purpose": "Explorer une mise en page responsive adaptée aux besoins de ce secteur.",
+      "features": [
+        "Consultation du menu et informations du restaurant",
+        "Mise en page responsive (prévue)"
+      ],
+      "techs": [],
+      "status": "Exemple à venir · technologies non définies"
+    }
+  },
+  {
+    "id": "ecommerce",
+    "type": "website",
+    "art": "website",
+    "variant": "shop",
+    "en": {
+      "name": "E-commerce website",
+      "category": "Retail & e-commerce",
+      "description": "A planned storefront for browsing a product catalogue.",
+      "overview": "This is a planned design example, not a completed client website. The wireframe indicates a possible visual direction.",
+      "purpose": "Explore a responsive, business-focused website layout for this sector.",
+      "features": [
+        "Product catalogue and product presentation",
+        "Responsive layout (planned)"
+      ],
+      "techs": [],
+      "status": "Planned example · technologies not selected"
+    },
+    "fr": {
+      "name": "Site e-commerce",
+      "category": "Commerce en ligne",
+      "description": "Un exemple de boutique pour parcourir un catalogue de produits.",
+      "overview": "Il s’agit d’un exemple de conception à venir, et non d’un site client réalisé. La maquette présente une piste de mise en page.",
+      "purpose": "Explorer une mise en page responsive adaptée aux besoins de ce secteur.",
+      "features": [
+        "Catalogue et présentation des produits",
+        "Mise en page responsive (prévue)"
+      ],
+      "techs": [],
+      "status": "Exemple à venir · technologies non définies"
+    }
+  },
+  {
+    "id": "photography",
+    "type": "website",
+    "art": "website",
+    "variant": "photo",
+    "en": {
+      "name": "Photography portfolio",
+      "category": "Photography",
+      "description": "A planned image-led portfolio for presenting photography work.",
+      "overview": "This is a planned design example, not a completed client website. The wireframe indicates a possible visual direction.",
+      "purpose": "Explore a responsive, business-focused website layout for this sector.",
+      "features": [
+        "Photo galleries and project presentation",
+        "Responsive layout (planned)"
+      ],
+      "techs": [],
+      "status": "Planned example · technologies not selected"
+    },
+    "fr": {
+      "name": "Portfolio de photographie",
+      "category": "Photographie",
+      "description": "Un exemple de portfolio visuel pour présenter des travaux photographiques.",
+      "overview": "Il s’agit d’un exemple de conception à venir, et non d’un site client réalisé. La maquette présente une piste de mise en page.",
+      "purpose": "Explorer une mise en page responsive adaptée aux besoins de ce secteur.",
+      "features": [
+        "Galeries photo et présentation des projets",
+        "Mise en page responsive (prévue)"
+      ],
+      "techs": [],
+      "status": "Exemple à venir · technologies non définies"
+    }
+  },
+  {
+    "id": "electronics",
+    "type": "website",
+    "art": "website",
+    "variant": "shop",
+    "en": {
+      "name": "Electronics shop website",
+      "category": "Computers & electronics",
+      "description": "A planned website for computer and electronics product discovery.",
+      "overview": "This is a planned design example, not a completed client website. The wireframe indicates a possible visual direction.",
+      "purpose": "Explore a responsive, business-focused website layout for this sector.",
+      "features": [
+        "Product categories and shop information",
+        "Responsive layout (planned)"
+      ],
+      "techs": [],
+      "status": "Planned example · technologies not selected"
+    },
+    "fr": {
+      "name": "Site de magasin informatique",
+      "category": "Informatique & électronique",
+      "description": "Un exemple de site pour découvrir des produits informatiques et électroniques.",
+      "overview": "Il s’agit d’un exemple de conception à venir, et non d’un site client réalisé. La maquette présente une piste de mise en page.",
+      "purpose": "Explorer une mise en page responsive adaptée aux besoins de ce secteur.",
+      "features": [
+        "Catégories de produits et informations du magasin",
+        "Mise en page responsive (prévue)"
+      ],
+      "techs": [],
+      "status": "Exemple à venir · technologies non définies"
+    }
+  },
+  {
+    "id": "corporate",
+    "type": "website",
+    "art": "website",
+    "variant": "corporate",
+    "en": {
+      "name": "Professional website",
+      "category": "Corporate & services",
+      "description": "A planned website presenting a business, its services and contact information.",
+      "overview": "This is a planned design example, not a completed client website. The wireframe indicates a possible visual direction.",
+      "purpose": "Explore a responsive, business-focused website layout for this sector.",
+      "features": [
+        "Service pages and contact information",
+        "Responsive layout (planned)"
+      ],
+      "techs": [],
+      "status": "Planned example · technologies not selected"
+    },
+    "fr": {
+      "name": "Site professionnel",
+      "category": "Entreprise & services",
+      "description": "Un exemple de site présentant une entreprise, ses services et ses coordonnées.",
+      "overview": "Il s’agit d’un exemple de conception à venir, et non d’un site client réalisé. La maquette présente une piste de mise en page.",
+      "purpose": "Explorer une mise en page responsive adaptée aux besoins de ce secteur.",
+      "features": [
+        "Pages de services et coordonnées",
+        "Mise en page responsive (prévue)"
+      ],
+      "techs": [],
+      "status": "Exemple à venir · technologies non définies"
+    }
+  }
+];
+// Configure only verified destinations. Empty values do not render as links.
+const siteConfig = {
+  contactEndpoint: '', email: '',
+  socials: {github: 'https://github.com/Catzu-stack', linkedin: '', youtube: ''},
+  projects: {planforge: {github:'', demo:'', screenshots:[]}, students: {github:'', demo:'', screenshots:[]}}
+};
+const $ = s => document.querySelector(s);
+const app = $('#app');
+const routes = ['home','about','projects','skills','contact'];
+const groups = ['ai','software','website'];
+const filters = ['all', ...groups];
+let lang = 'fr';
+try { if(localStorage.getItem('og-lang') === 'en') lang = 'en'; } catch {}
+let currentPage = 'home', activeFilter = 'all', lastFocus = null, openProjectId = null, revealObserver;
+const tr = () => translations[lang];
+const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+function safeURL(raw) { try { const u = new URL(raw); return u.protocol === 'https:' ? u.href : ''; } catch { return ''; } }
+function safeImage(raw) { try { const u = new URL(raw, location.href); return ['https:','http:','file:'].includes(u.protocol) && (u.origin === location.origin || u.protocol === 'https:') ? u.href : ''; } catch { return ''; } }
+function projectsData() {
+  return projectCatalog.map((entry, index) => {
+    const config = siteConfig.projects[entry.id] || {};
+    return {...entry[lang], id:entry.id, type:entry.type, art:entry.art, variant:entry.variant, index, github:safeURL(config.github), demo:safeURL(config.demo), screenshots:(config.screenshots || []).map(safeImage).filter(Boolean)};
+  });
+}
+const pageFromHash = () => { const h = location.hash.replace(/^#\/?/,'').split('/')[0]; return routes.includes(h) ? h : 'home'; };
+function setMenu(open) {
+  $('#mobile-nav').classList.toggle('open',open);
+  $('#menu-toggle').setAttribute('aria-expanded',String(open));
+  $('#menu-toggle').setAttribute('aria-label',open ? tr().menuClose : tr().menuOpen);
+}
+function updateNav() {
+  const t=tr();
+  const links=routes.map((key,i)=>`<a href="#/${key}" class="${currentPage===key?'active':''}" ${currentPage===key?'aria-current="page"':''}>${t.nav[i]}</a>`).join('');
+  $('#desktop-nav').innerHTML=links; $('#mobile-nav').innerHTML=links;
+  $('#lang-toggle').innerHTML=lang==='fr'?'<strong>FR</strong><span>/</span>EN':'FR<span>/</span><strong>EN</strong>';
+  $('#lang-toggle').setAttribute('aria-label',lang==='fr'?'Switch to English':'Passer en français');
+  $('.nav').setAttribute('aria-label',t.navLabel); $('.brand').setAttribute('aria-label',`M.SUZUKI — ${t.nav[0]}`); $('#skip-link').textContent=t.skip;
+  setMenu(false);
+  document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t[el.dataset.i18n]);
+}
+function artMarkup(p) {
+  const t=tr(), fr=lang==='fr';
+  if(p.screenshots.length) return `<div class="project-art has-image"><img src="${escapeHTML(p.screenshots[0])}" alt="${escapeHTML(p.name)} — ${t.screenshot}" loading="lazy" decoding="async"></div>`;
+  let inside='';
+  if(p.art==='agent') inside=`<div class="flow"><div class="flow-node">${fr?'IDÉE':'IDEA'}</div><div class="flow-line"></div><div class="flow-node">${fr?'PLAN IA':'AI PLAN'}</div><div class="flow-line"></div><div class="flow-node">${fr?'RAPPORT':'REPORT'}</div></div>`;
+  else if(p.art==='terminal') inside=`<div class="term"><span class="green">C / ${fr?'STRUCTURES':'STRUCTURES'}</span><br>${fr?'Dossiers étudiants':'Student records'}<br><span class="blue">${fr?'Pointeurs · mémoire':'Pointers · memory'}</span><br>${fr?'Opérations CRUD':'CRUD operations'}<br><span class="green">$ _</span></div>`;
+  else inside=`<div class="web-frame"><div class="web-toolbar"><i></i><i></i><i></i><b></b></div><div class="web-content ${p.variant}"><span class="web-hero"></span><span></span><span></span>${['shop','photo'].includes(p.variant)?'<span></span><span></span><span></span>':''}</div></div>`;
+  return `<div class="project-art ${p.art}" aria-hidden="true"><span class="art-caption">${p.type==='website'?t.planned:t.preview}</span><span class="art-number">${String(p.index+1).padStart(2,'0')} / MS</span>${inside}</div>`;
+}
+function techMarkup(p) { return p.techs.length ? `<div class="tags">${p.techs.map(x=>`<span class="tag">${x}</span>`).join('')}</div>` : `<div class="tags"><span class="tag">${lang==='fr'?'Technologies à définir':'Technologies to be selected'}</span></div>`; }
+function projectCard(p) {
+  const t=tr();
+  return `<article class="project-card reveal" data-project="${p.id}" data-type="${p.type}">${artMarkup(p)}<div class="project-body"><div class="project-top"><h3>${p.name}</h3><span class="project-category">${p.category}</span></div><p>${p.description}</p>${techMarkup(p)}<button class="card-action" type="button" aria-label="${t.viewDetails} — ${p.name}">${t.viewDetails}<span class="arrow" aria-hidden="true">↗</span></button></div></article>`;
+}
+function homeView() {
+  const t=tr(), featured=projectsData().filter(p=>['planforge','students','restaurant'].includes(p.id));
+  return `<section class="wrap hero"><div class="hero-copy"><div class="status"><i class="status-dot"></i><span class="eyebrow">${t.status}</span></div><h1>${t.heroLead} <span class="accent">${t.heroAccent}</span></h1><p class="hero-desc">${t.heroDesc}</p><div class="actions"><a class="btn btn-primary" href="#/projects">${t.ctaProjects}<span class="arrow" aria-hidden="true">→</span></a><a class="btn" href="#/contact">${t.ctaContact}<span class="arrow" aria-hidden="true">↗</span></a></div><div class="hero-meta">${t.scroll}</div></div><div class="hero-art" role="img" aria-label="${t.artAlt}"><div class="art-glow"></div><div class="art-grid"></div><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="core"><span class="core-mark">MS</span></div><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i><i class="node n5"></i>${t.artLabels.map((v,i)=>`<span class="art-label l${i+1}">${v}</span>`).join('')}</div></section><div class="wrap identity-strip">${t.identity.map(x=>`<span>${x}</span>`).join('')}</div><section class="section wrap"><div class="section-head reveal"><div><div class="kicker">${t.featuredKicker}</div><h2>${t.featuredTitle}</h2></div><p>${t.featuredDesc}</p></div><div class="projects-grid featured-grid">${featured.map(projectCard).join('')}</div><div style="text-align:center;margin-top:28px"><a href="#/projects" class="btn">${t.seeAll}<span class="arrow" aria-hidden="true">→</span></a></div></section>`;
+}
+function projectsView() {
+  const t=tr(), projects=projectsData();
+  return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.projectsKicker}</div><h1 class="page-title">${t.projectTitle}</h1><p>${t.projectIntro}</p></section><section class="content-section"><div class="projects-filter" role="group" aria-label="${t.filterLabel}">${filters.map((f,i)=>`<button class="filter-btn ${activeFilter===f?'active':''}" data-filter="${f}" type="button" aria-pressed="${activeFilter===f}">${t.filters[i]}</button>`).join('')}</div>${groups.map((g,i)=>{const items=projects.filter(p=>p.type===g);return `<section class="project-group" data-group="${g}" ${activeFilter!=='all'&&activeFilter!==g?'hidden':''}><div class="group-heading"><h2>${t.filters[i+1]}</h2><span class="group-count">${String(items.length).padStart(2,'0')}</span></div><div class="projects-grid all-projects">${items.map(projectCard).join('')}</div></section>`;}).join('')}</section></div>`;
+}
+function socialItem(label,key) {
+  const url=safeURL(siteConfig.socials[key]);
+  return url?`<a class="social-item" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer"><span>${label}</span><span aria-hidden="true">↗</span></a>`:'';
+}
+function contactView() {
+  const t=tr(), email=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(siteConfig.email)?siteConfig.email:'', endpoint=safeURL(siteConfig.contactEndpoint);
+  const socials=[socialItem(t.socialGithub,'github'),socialItem(t.socialLinkedin,'linkedin'),socialItem(t.socialYoutube,'youtube')].join('');
+  return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.contactKicker}</div><h1 class="page-title">${t.contactTitle}</h1><p>${t.contactIntro}</p></section><section class="content-section"><div class="contact-layout"><div class="contact-note"><h2>${t.contactLabel}</h2><p>${t.contactBody}</p><div class="social-list">${email?`<a class="social-item" href="mailto:${escapeHTML(email)}"><span>${escapeHTML(email)}</span><span aria-hidden="true">↗</span></a>`:`<p class="no-channels">${t.contactUnavailable}</p>`}${socials}</div></div><form class="contact-form" id="contact-form" novalidate>${endpoint?'':`<p class="form-info">${t.formInfo}</p>`}<div class="form-row"><div class="field"><label for="name">${t.name} *</label><input id="name" name="name" required autocomplete="name" placeholder="${t.placeholderName}"></div><div class="field"><label for="email">${t.email} *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="${t.placeholderEmail}"></div></div><div class="field"><label for="subject">${t.subject} *</label><input id="subject" name="subject" required placeholder="${t.placeholderSubject}"></div><div class="field"><label for="message">${t.message} *</label><textarea id="message" name="message" required placeholder="${t.placeholderMessage}"></textarea></div><div class="honeypot" aria-hidden="true" inert><input name="website" tabindex="-1" autocomplete="off"></div><button class="btn btn-primary" type="submit">${endpoint?t.send:t.check}<span class="arrow" aria-hidden="true">→</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></div></section></div>`;
+}
+
+function aboutView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.aboutKicker}</div><h1 class="page-title">${t.aboutTitle}</h1><p>${t.aboutIntro}</p></section><section class="content-section"><div class="about-grid"><div class="about-copy"><h2 class="kicker">${t.aboutHeading}</h2><p>${t.aboutBody}</p><div class="timeline"><div class="timeline-head"><h3>${t.journey}</h3><span class="ongoing">${t.ongoing}</span></div><div class="timeline-row"><b>${t.school}</b><span>${t.schoolDesc}</span></div><div class="timeline-row"><b>${t.journeyStep}</b><span>${t.journeyDesc}</span></div></div></div><div><div class="kicker" style="margin:0 0 14px">${t.expertise}</div><div class="expertise-stack"><article class="expertise-card"><h3>${t.aiExpertise}</h3><ul>${t.aiList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.devExpertise}</h3><ul>${t.devList.map(x=>`<li>${x}</li>`).join('')}</ul></article><article class="expertise-card"><h3>${t.infraExpertise}</h3><ul>${t.infraList.map(x=>`<li>${x}</li>`).join('')}</ul></article></div></div></div></section></div>`}
+function skillsView(){const t=translations[lang];return `<div class="wrap"><section class="page-intro"><div class="kicker">${t.skillsKicker}</div><h1 class="page-title">${t.skillsTitle}</h1><p>${t.skillsIntro}</p></section><section class="content-section"><div class="skills-grid">${t.skillsGroups.map(([title,icon,...items])=>`<article class="skill-panel reveal"><h3><span class="skill-icon">${icon}</span>${title}</h3><div class="skill-list">${items.map(x=>`<span class="skill">${x}</span>`).join('')}</div></article>`).join('')}</div></section></div>`}
+function render({keepScroll=false,focusPage=false,draft=null}={}) {
+  if(openProjectId) closeModal(false);
+  currentPage=pageFromHash(); document.documentElement.lang=lang; updateNav();
+  const views={home:homeView,about:aboutView,projects:projectsView,skills:skillsView,contact:contactView};
+  app.innerHTML=views[currentPage]();
+  const t=tr(); document.title=`${t.nav[routes.indexOf(currentPage)]} — M.SUZUKI | ${t.heroLead} ${t.heroAccent}`;
+  document.querySelector('meta[name="description"]').content=t.meta;
+  document.querySelector('meta[property="og:description"]').content=t.meta;
+  document.querySelector('meta[property="og:title"]').content=`M.SUZUKI — ${t.heroLead} ${t.heroAccent}`;
+  if(currentPage==='projects') bindFilters();
+  if(currentPage==='contact') {bindForm(); if(draft) for(const [k,v] of Object.entries(draft)) {if($('#contact-form').elements[k]) $('#contact-form').elements[k].value=v;}}
+  bindCards(); observeReveals();
+  if(!keepScroll) window.scrollTo({top:0,behavior:'instant'});
+  if(focusPage) app.focus({preventScroll:true});
+}
+function bindFilters() {
+  document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+    activeFilter=btn.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn));});
+    document.querySelectorAll('.project-group').forEach(group=>{group.hidden=activeFilter!=='all'&&group.dataset.group!==activeFilter;});
+    observeReveals();
+  }));
+}
+function bindCards() {
+  document.querySelectorAll('.project-card').forEach(card=>{
+    card.addEventListener('click',()=>showProject(card.dataset.project,card.querySelector('button')));
+  });
+}
+function projectLink(url,label) {return url?`<a class="btn" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${label}<span aria-hidden="true">↗</span></a>`:'';}
+function showProject(id, trigger=null) {
+  const p=projectsData().find(item=>item.id===id),t=tr(); if(!p) return;
+  lastFocus=trigger||document.activeElement; openProjectId=id;
+  const links=projectLink(p.github,'GitHub')+projectLink(p.demo,t.live);
+  const images=p.screenshots.map((src,i)=>`<img src="${escapeHTML(src)}" alt="${escapeHTML(p.name)} — ${t.screenshot} ${i+1}" loading="lazy" decoding="async">`).join('');
+  $('#modal-content').innerHTML=`<button type="button" class="modal-close" aria-label="${t.close}">✕</button><div class="kicker">${t.projectKicker} ${String(p.index+1).padStart(2,'0')} · M.SUZUKI</div>${artMarkup(p)}${p.screenshots.length?'':`<div class="preview-label">${p.type==='website'?t.plannedPreview:t.notReal}</div>`}<h2 id="modal-title">${p.name}</h2><span class="detail-category">${p.category}</span><h3>${t.detail}</h3><p>${p.overview}</p><h3>${t.purpose}</h3><p>${p.purpose}</p><h3>${t.features}</h3><ul>${p.features.map(v=>`<li>${v}</li>`).join('')}</ul><h3>${t.tech}</h3>${techMarkup(p)}<h3>${t.statusLabel}</h3><p>${p.status}</p><h3>${t.links}</h3>${links?`<div class="actions">${links}</div>`:`<p>${t.noLinks}</p>`}<h3>${t.screens}</h3><div class="detail-screens">${images||`<p>${t.noScreens}</p>`}</div>`;
+  const modal=$('#project-modal'); modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+  [app,$('.topbar'),$('.footer'),$('#skip-link')].forEach(el=>el.inert=true);
+  $('#modal-content').scrollTop=0; $('.modal-close').focus(); $('.modal-close').addEventListener('click',()=>closeModal());
+}
+function closeModal(restore=true) {
+  const modal=$('#project-modal'); modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow='';
+  [app,$('.topbar'),$('.footer'),$('#skip-link')].forEach(el=>el.inert=false);
+  openProjectId=null;
+  if(restore&&lastFocus?.isConnected)lastFocus.focus({preventScroll:true}); lastFocus=null;
+}
+function bindForm() {
+  const form=$('#contact-form'),status=$('#form-status'),button=form.querySelector('button[type="submit"]'),t=tr();
+  form.addEventListener('submit',async e=>{
+    e.preventDefault(); status.className='form-status'; const data=new FormData(form), email=String(data.get('email')||'').trim();
+    if(data.get('website'))return;
+    if(!form.checkValidity()||!['name','subject','message'].every(k=>String(data.get(k)||'').trim())||! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {status.textContent=t.formInvalid;status.classList.add('error');return;}
+    const endpoint=safeURL(siteConfig.contactEndpoint);
+    if(!endpoint){status.textContent=t.formPending;return;}
+    button.disabled=true;status.textContent=t.sending;
+    try {const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:data.get('name'),email,subject:data.get('subject'),message:data.get('message')})}); if(!response.ok)throw new Error('Submission failed');status.textContent=t.sent;status.classList.add('success');form.reset();}
+    catch{status.textContent=t.failed;status.classList.add('error');}finally{button.disabled=false;}
+  });
+}
+function observeReveals() {
+  revealObserver?.disconnect(); const els=document.querySelectorAll('.reveal:not(.visible)');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('visible'));return;}
+  revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}}),{threshold:.12});els.forEach(e=>revealObserver.observe(e));
+}
+$('#lang-toggle').addEventListener('click',()=>{
+  const form=$('#contact-form'),draft=form?Object.fromEntries(new FormData(form)):null,id=openProjectId;
+  lang=lang==='fr'?'en':'fr';try{localStorage.setItem('og-lang',lang);}catch{} render({keepScroll:true,draft});
+  if(id)showProject(id,document.querySelector(`[data-project="${id}"] .card-action`));
+});
+$('#menu-toggle').addEventListener('click',()=>setMenu(!$('#mobile-nav').classList.contains('open')));
+$('#mobile-nav').addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false);});
+$('#skip-link').addEventListener('click',e=>{e.preventDefault();app.focus();});
+window.addEventListener('hashchange',()=>{if(pageFromHash()!=='projects'||currentPage!=='projects')activeFilter='all';render({focusPage:true});});
+$('#project-modal').addEventListener('click',e=>{if(e.target===$('#project-modal'))closeModal();});
+window.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){if(openProjectId)closeModal();else if($('#mobile-nav').classList.contains('open')){setMenu(false);$('#menu-toggle').focus();}}
+  if(e.key==='Tab'&&openProjectId){const focusable=[...$('#modal-content').querySelectorAll('button:not([disabled]),a[href]')];const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}
+});
+$('#year').textContent=new Date().getFullYear(); render();
+
 </script>
 </body>
 </html>
